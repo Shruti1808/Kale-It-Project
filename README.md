@@ -1,0 +1,6 @@
+- [ ] Full screen slide up after diet section
+- [ ] Question slide in
+- [ ] Sassiness array, math floor, math random for loop
+- [ ] Social media links, twitter icons
+- [ ] Quotations
+- [ ] Mail to, contact us
