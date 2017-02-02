@@ -15,6 +15,7 @@
 	<script src="js/scripts.js" type="text/javascript"></script>
   <title>DIET APP</title>
 </head>
+
 <body>
   <h1 class="jumbotron">Diet App</h1>
 
@@ -36,7 +37,111 @@
 					<div class="row">
 							<div class="col-lg-12">
 									<h1>Diet</h1>
-									<a class="btn btn-default page-scroll" href="#exercise">Tell us how you exercise</a>
+									<div class="diet">
+										<form>
+  										<ul>
+  											<li>
+                          <div class="breakfast">
+                            <h2>What do you most usually eat for breakfast?</h2>
+                            <div class="form-group"><input type="radio" name="breakfast" value ="1"> No breakfast</div>
+                            <div class="form-group"><input type="radio" name="breakfast" value ="3"> Light breakfast(eg,coffee,crackers,biscuits)</div>
+                            <div class="form-group"><input type="radio" name="breakfast" value ="5"> Medium breakfast(eg, oats,cereals,omelletes,quinoa,fruit servings)</div>
+                            <div class="form-group"><input type="radio" name="breakfast" value ="7"> Hearty breakfast(eg, paranthas,quiche,noodles,sandwich)</div>
+                          </div>
+                        </li>
+              					<li>
+                          <div class="lunch">
+                            <h2>What do you most usually eat for lunch?</h2>
+                            <div class="form-group"><input type="radio" name="lunch" value ="1"> No lunch</div>
+                            <div class="form-group"><input type="radio" name="lunch" value ="3"> Small lunch(eg,soup, salad, chips, lunchables)</div>
+                            <div class="form-group"><input type="radio" name="lunch" value ="5"> Moderate lunch(eg, rice with soup, noodle soup,subway sandwich )</div>
+                            <div class="form-group"><input type="radio" name="lunch" value ="7"> Nutritious lunch(eg, burger, rice with side dishes and soup,... with drinks and desserts)</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dinner">
+                            <h2>What do you most usually eat for dinner?</h2>
+                            <div class="form-group"><input type="radio" name="dinner" value ="1"> One single food group (protein, carb or vegetables) such as corn, egg, salad.</div>
+                            <div class="form-group"><input type="radio" name="dinner" value ="3"> Two food group such as pasta with meatballs, grilled vegetables with garlic bread, sushi or tikka chicken with basmati rice</div>
+                            <div class="form-group"><input type="radio" name="dinner" value ="5"> Three food group such as rice with meat and vegetables, pratha with yogurt and dal and egg, steaks with mash potatoes and gravy</div>
+                            <div class="form-group"><input type="radio" name="dinner" value ="7"> Three food group with drinks such as wine, beer, juice or milk or desserts such as cakes, brownies, cookies or fruit servings</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="status">
+                            <h2>How do you perceive your diet intake at the moment?</h2>
+                            <div class="form-group"><input type ="radio" name="status" value="2"> I feel like I am undereating</div>
+                            <div class="form-group"><input type ="radio" name="status" value="4"> My daily food intake is sufficient</div>
+                            <div class="form-group"><input type ="radio" name="status" value="6"> I feel like I might be overeating</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="savvy">
+                            <h2>How nutrition savvy you are?</h2>
+                            <div class="form-group"><input type ="radio" name="savvy" value="2"> Not Interested</div>
+                            <div class="form-group"><input type ="radio" name="savvy" value="4"> Very Keen</div>
+                            <div class="form-group"><input type ="radio" name="savvy" value="6"> Extremely Interested</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="fiber">
+                            <h2>How much fiber should you aim for every day?</h2>
+                            <div class="form-group"><input type ="radio" name="fiber" value="1"> 5 grams</div>
+                            <div class="form-group"><input type ="radio" name="fiber" value="3"> 10 to 15 grams</div>
+                            <div class="form-group"><input type ="radio" name="fiber" value="5"> 21 to 35 grams</div>
+                            <div class="form-group"><input type ="radio" name="fiber" value="7"> 50 grams</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="condition">
+                            <h2>Do you have any medical/physical condition that makes you....?</h2>
+                            <select class="conditionMed" name="conditionMed">
+                              <option value="2">Easily lose weight</option>
+                              <option value="4">Easily gain weight</option>
+                              <option value="6">Neither lose or gain weight easily</option>
+                            </select>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="eatMore">
+                            <h2>What food group do you want to eat more?</h2>
+                            <input type="checkbox" name="eatMore" value="1"> Vegetables and Legumes<br>
+                            <input type="checkbox" name="eatMore" value="3"> Fruits<br>
+                            <input type="checkbox" name="eatMore" value="5"> Grain, cereal, wholegrain or high fiber varieties<br>
+                            <input type="checkbox" name="eatMore" value="7"> Meat, eggs and beans<br>
+                            <input type="checkbox" name="eatMore" value="9"> Confections<br>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="eatLess">
+                            <h2>What food group do you want to eat less?</h2>
+                            <input type="checkbox" name="eatLess" value="9"> Vegetables and Legumes<br>
+                            <input type="checkbox" name="eatLess" value="7"> Fruits<br>
+                            <input type="checkbox" name="eatLess" value="5"> Grain, cereal, wholegrain or high fiber varieties<br>
+                            <input type="checkbox" name="eatLess" value="3"> Meat, eggs and beans<br>
+                            <input type="checkbox" name="eatLess" value="1"> Confections<br>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="weight">
+                            <h2>Do you want to</h2>
+                            <div>
+                              <label for="weightQn">How much weight would you like to gain/lose?</label>
+                            </div>
+                            <div>
+                              <select class="weightQn" name="weightQn">
+                                <option value="1"> Lose weight</option>
+                                <option value="2"> Gain weight</option>
+                              </select>
+                            </div>
+                            <br>
+                            <input type="number" id="weightQn">
+                          </div>
+                        </li>
+  										</ul>
+                      <a class="btn btn-default page-scroll" href="#exercise">Tell us how you exercise</a>
+										  <button type="submit" class="btn">Submit</button>
+										</form>
 									</div>
 							</div>
 					</div>
@@ -60,22 +165,138 @@
 					<div class="row">
 							<div class="col-lg-12">
 									<h1>Survey result</h1>
+<<<<<<< HEAD
                   <a class="btn btn-default page-scroll" href="#articles">Read more about how to kale it!</a>
 							</div>
+=======
+                  <div class="results">
+                    <div class="gainWeight">
+                      <p id="gainParagraph">
+                        In order to gain <span></span>weight , you should try the following :
+                      </p>
+                      <div class="eatMoreGain">
+                        <ul id="vegetableGain">Vegetables and Legumes group
+                          <li>For quick mass gain, you can try potatoes or sweet potatoes</li>
+                          <li>Kale, mustard greens, spinach and the like can help you up your protein intake as they are the most protein dense, as with other leafy greens.</li>
+                        </ul>
+                        <ul id="fruitGain">Fruit and fruit juices
+                          <li>Fruits like mangoes, papayas, and pineapples are very rich in sugar and can help pack on some extra, healthy pounds without too much effort. Also, the rich mineral, vitamin, and antioxidant content of these fruits (not to mention fiber) will make sure you are gaining weight in a healthy way.</li>
+                          <li>A healthy and nutritious way to gain some pounds, sip 100-percent fruit juice that's full of sugar and added nutrients. </li>
+                          <li>Eat dry fruits !! Because they have more calories and are still very nutritious. </li>
+                        </ul>
+                        <ul id="cerealGain">Grain, cereal, wholegrain or high fiber varieties
+                          <li>Eating cereal can be a great way to gain weight and consume more fiber. However, stick to healthier forms such as oatmeal.</li>
+                          <li>Avoid processed ones and cereals with refined grains or added sugar.</li>
+                        </ul>
+                        <ul id="meatGain">Meat, eggs and beans
+                          <li>Try Red Meat !! The fattier the meat, the more calories you will take in.</li>
+                          <li>Eggs are super nutritional, they provide you with essential energy and nutrients.One egg has about 75 calories, along with 5 grams of fat and about 6 grams of protein, as well as essentials like vitamin B-12.</li>
+                          <li>Beans are good protein substitutes,especially if you are a vegetarian.</li>
+                        </ul>
+                        <ul id="sweetsGain">Confections
+                          <li>Eat desserts that have a lot of nutrients, like frozen yogurt, oatmeal cookies, zucchini bread, and pumpkin pie.</li>
+                          <li>Spread - soft, salty peanut butter on bread. It gives you approximately 192 calories plus it is extra high in protein.</li>
+                        </ul>
+                      </div>
+                      <br>
+                      <div class="eatMoreLose">
+                        <p id="loseParagraph">For healthy weight loss, you should try to eat more of the following:</p>
+                        <ul id="vegetableLoss">Vegetables and Legumes group
+                          <li>Leafy greens that include kale, spinach, collards, swiss chards are low in calories and carbohydrates,but loaded with fiber.</li>
+                          <li>Raw vegetables make an outstanding snack. They satisfy the desire to crunch, they're full of water to help you feel full, and they're low in calories. When you're in the mood for chips and dip, replace the chips with raw veggies.</li>
+                        </ul>
+                        <ul id="fruitLoss">Fruit and fruit juices
+                          <li>Swap out sweets for fruits.</li>
+                          <li>Snacking on a hydrating food like watermelon, cucumber, strawberries, or cantaloupe. The water will help you stay hydrated, and the combo of H2O and fiber will also fill your tummy up and keep you full</li>
+                        </ul>
+                        <ul id="cerealLoss">Grain, cereal, wholegrain or high fiber varieties
+                          <li>Oats are rich in fiber, so a serving can help you feel full throughout the day. Just a half cup packs 4.6 grams of starch, a healthy carb that boosts metabolism and burns fat. </li>
+                          <li>Whole-grain foods such as whole wheat, brown rice, whole-grain breads, cereals, and waffles are a much better choice than refined white foods because they're generally higher in fiber, more nutritious, and more filling.Eat 3 cups of air-popped popcorn instead of 1 ounce of potato chips (about 15 chips) and you'll cut 65 calories and get a lot more food to crunch. </li>
+                          <li>Quinoa is a nutritional all-star.This whole grain has 8 grams of hunger-busting protein and 5 grams of fiber in one cup. Mix it in some vegetables, nuts or lean protein and you're good to go. </li>
+                        </ul>
+                        <ul id="meatLoss">Meat, eggs and beans
+                          <li>Eggs are incredibly nutrient dense and can help you get all the nutrients you need on a calorie restricted diet. Almost all the nutrients are found in the yolks.</li>
+                          <li>You should try Salmon !! Salmon is loaded with high quality protein, healthy fats and supplies a significant amount of iodine. </li>
+                          <li>Beans are a vegetable, a protein, and a great source of fiber.One cup packs 12.5 grams of fiber, just 4 grams of fat, and almost 15 grams of protein.</li>
+                        </ul>
+                        <ul id="sweetsLoss">Confections
+                          <li>Treats that satisfy your sweet tooth don't have to bust the calorie bank. Sorbet, fat-free frozen yogurt, light or slow-churned ice creams, simple cookies, and fruit-based desserts adds up to only 100-150 calories.</li>
+                          <li>Enjoying an occasional burger and fries won't do bad to your diet.</li>
+                        </ul>
+                      </div>
+                      <br>
+                      <div class="eatLessGain eatLessLose">
+                        <p>Some of the food you might want to eat less:</p>
+                        <ul>
+                          <li>Avoid artificial products such as potato chips and fast food.</li>
+                          <li>Avoid unprocessed Red Meat</li>
+                          <li>Avoid foods like candy, pure sugar and foods containing a lot of sugar. Ice cream, pizza, potato chips and twizzlers are all bad for you and won't give you the gains you are looking for.</li>
+                          <li>Avoid the white stuff (Saturated Fats) and be sure to eat a lot of fish and chicken breast</li>
+                          <li> No Fizzy drinks!!</li>
+                          <li>Hold the mayonnaise or cheese on your sandwich. Replace it with mustard, lettuce and tomato.</li>
+                          <li>Drink 100% fruit juice instead of juice with added sugar.</li>
+                          <li>Limit meat portions to 3-4 ounces (about the size of a deck of cards).</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
 					</div>
 			</div>
 	</section>
 
 	<!-- Article Section -->
 	<section id="articles" class="article-section">
-			<div class="container">
-					<div class="row">
-							<div class="col-lg-12">
-									<h1>Articles</h1>
-							</div>
-					</div>
-			</div>
-	</section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Articles</h1>
 
+            <div class="card-deck">
+              <div class="col-md-4 border">
+                <div class="card">
+                  <img class="card-img-top" src="img/bananas.jpg" alt="The grocery isle with bananas">
+                    <div class="card-block">
+                    <h3 class="card-title">Healthy Eating on a <br> Budget</h3>
+                    <p class="card-text">Healthy dinners don't have to break the bank-use budget friendly ingredients...<a href="http://www.foodnetwork.com/healthy/photos/budget-friendly-healthy-dinners.html">Read More</a></p>
+                    <img class="card-img-top" src="img/organic.jpg" alt="A variety of fresh vegetables">
+                    <h3 class="card-title">When is it Worth Buying Organic?</h3>
+                    <p class="card-text">When deciding to spend money, fewer things are as worthwhile an investment as your health...<a href="https://www.learnvest.com/knowledge-center/when-is-it-worth-buying-organic/">Read More</a></p>
+                  </div>
+                </div>
+              </div>
+
+            <div class="card-deck">
+              <div class="col-md-4 border">
+                <div class="card">
+                  <img class="card-img-top" src="img/strech.jpeg" alt="A man as he looks ahead at a bridge will stretching">
+                  <div class="card-block">
+                    <h3 class="card-title">How Long Until You See Results?</h3>
+                    <p class="card-text">At a physiological and hormonal level, changes start to occur in the body instantly after a workout...<a href="http://www.livestrong.com/article/438047-how-long-does-it-take-to-change-your-body-after-working-out/">Read More</a href></p>
+                    <img class="card-img-top" src="img/weights.jpeg" alt="Weights lined up against the wall">
+                    <h3 class="card-title">What To Do When Your Workout Isn't Working</h3>
+                    <p class="card-text">Tips for anyone working hard but not making progress...<a href="https://www.verywell.com/what-to-do-when-your-workout-isnt-working-3120589">Read More</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-deck">
+              <div class="col-md-4 border">
+                <div class="card">
+                  <img class="card-img-top" src="img/happy.jpeg" alt="A yellow wall with a girl holding an umbrella">
+                  <div class="card-block">
+                    <h3 class="card-title">Eat Yourself Happy To Improve Mental Health</h3>
+                    <p class="card-text">We reveal the way to eat to improve your happiness...<a href="http://www.mirror.co.uk/lifestyle/health/eat-yourself-happy-food-improve-6481185">Read More</a></p>
+                    <img class="card-img-top" src="img/fresh.jpg" alt="Fresh produce">
+                    <h3 class="card-title">Diet and Exercise Can Protect and Improve Mental Health</h3>
+                    <p class="card-text">A 2014 study examined the link between diet, exercise and mental health...<a href="https://www.healthybodywholesomemind.com/diet-and-exercise-improve-mental-health/">Read More</a></p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
