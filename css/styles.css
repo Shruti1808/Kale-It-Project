@@ -52,8 +52,9 @@
 
 .result-section {
   height: 100%;
+  left: 40%;
   padding-top: 150px;
-  padding-bottom: 500px;
+  padding-bottom: 1500px;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: 15px;
