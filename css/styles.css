@@ -1,10 +1,12 @@
-body {
-  font-family: 'Maven Pro', sans-serif;
-  color: rgba(185, 187, 191, 0.7)
-}
-
 #gainParagraph, #vegetableGain, #fruitGain, #cerealGain, #meatGain, #sweetsGain, #foodInfo, #mealPlan, #loseParagraph, #suggestionParagraph, #vegetableLoss, #fruitLoss, #cerealLoss, #meatLoss, #sweetsLoss {
   display: none;
+}
+
+#shutup {
+  margin-left: 40px;
+  margin-top:-150px;
+  height: 600px;
+  margin-bottom: -40px;
 }
 
 .intro-section {
@@ -12,7 +14,13 @@ body {
     padding-top: 150px;
     padding-left: 25%;
     text-align: center;
-    background: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color:rgba(242, 243, 244,0.8);
+    background-color: rgba(58, 58, 58,0.8);
+    background-image: url(../img/food2.jpg);
+    background-size: cover;
 }
 
 .diet-section {
@@ -47,6 +55,9 @@ body {
     background: #fff;
 }
 
+.btn-block {
+  margin-top: 20px;
+}
 /*Position for arrow*/
 .unslider-arrow {
   position: absolute;
