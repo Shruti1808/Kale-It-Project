@@ -5,7 +5,9 @@
 #loseParagraph, #vegetableLoss, #fruitLoss, #cerealLoss, #meatLoss, #sweetsLoss {
   display: none;
 }
-
+.navbar {
+  height: 100px;
+}
 
 .navbar-inverse{
   background: rgba(0, 128, 43, 0.5);
@@ -27,20 +29,23 @@
 .searchbar {
   font-size: 30px;
   position: fixed;
-  right:12%;
-  margin-right: 100px;
+  right:11%;
+  margin-right: 30px;
   margin-left: 0px;
+  top: 5px;
 }
-.navbar-inverse .navbar-nav li a {
+.navbar-inverse .navbar-nav li a, .searchbar {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 28px;
     font-size: 20px;
-    color: #f4ce42;
+    color: rgb(229, 214, 165);
 }
+
 
 #navbar-logo {
   height: 100px;
   margin-left: 50px;
-  margin-top: -30px;
-
+  margin-top: -10px;
 }
 /* Template-specific stuff
  *
