@@ -32,3 +32,8 @@
     text-align: center;
     background: #fff;
 }
+
+.unslider-arrow {
+  position: absolute;
+  bottom:50%;
+}
