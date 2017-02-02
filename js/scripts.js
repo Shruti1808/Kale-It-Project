@@ -160,7 +160,7 @@ Choice.prototype.scoreNumber= function () {
 
 // user logic goes here
 $(document).ready(function(){
-  $(".diet").unslider();
+  $(".diet, .exercise").unslider();
 
   $("form").submit(function(event){
     event.preventDefault();
