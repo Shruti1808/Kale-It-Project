@@ -146,7 +146,7 @@
   			<div class="container">
   					<div class="row">
   							<div class="col-lg-12">
-  									<h1>Exercise survey</h1>
+  									<h1>Exercise Survey</h1>
                     <div class="exercise">
                       <ul>
                         <li>
@@ -250,12 +250,13 @@
 			<div class="container">
 					<div class="row">
 							<div class="col-lg-12">
-									<h1>Survey result</h1>
+									<h1>Results: Diet</h1>
                   <div class="results">
                     <div class="gainWeight">
                       <p id="gainParagraph">
                         In order to gain <span class="gainAndLose"></span> pounds, you should try the following:
                       </p>
+                      <!-- Gain Weight -->
                       <div class="eatMoreGain">
                         <ul id="vegetableGain">Vegetables and Legumes group
                           <li>For quick mass gain, you can try potatoes or sweet potatoes</li>
@@ -281,6 +282,7 @@
                         </ul>
                       </div>
                       <br>
+                      <!-- Lose Weight -->
                       <div class="eatMoreLose">
                         <p id="loseParagraph">
                           In order to lose <span class="gainAndLose"></span> pounds, you should try the following:
@@ -309,7 +311,15 @@
                         </ul>
                       </div>
                       <br>
+                      <!--Meal Table based on form results-->
+                      <div id="mealPlan">
+                        <h2>Meal Plan</h2>
+                        <p>
+                          This is your weekly meal plan: <span id="mealTable"></span>
+                        </p>
+                      </div>
                       <div id="foodInfo" class="eatLessGain eatLessLose">
+                        <h2>Other Suggestions</h2>
                         <p>Some of the food you might want to eat less:</p>
                         <ul>
                           <li>Avoid artificial products such as potato chips and fast food.</li>
@@ -322,6 +332,13 @@
                           <li>Limit meat portions to 3-4 ounces (about the size of a deck of cards).</li>
                         </ul>
                       </div>
+                    </div>
+                    <!--Exercise suggestion based on form results-->
+                    <div id="suggestion">
+                      <h1>Results: Exercise</h1>
+                      <p id="suggestionParagraph">
+                        This is your weekly exercise routine: <span id="weeklyRoutine"></span>
+                      </p>
                     </div>
                   </div>
               </div>

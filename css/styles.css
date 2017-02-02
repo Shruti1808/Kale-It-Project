@@ -1,8 +1,4 @@
-#gainParagraph, #vegetableGain, #fruitGain, #cerealGain, #meatGain, #sweetsGain {
-  display: none;
-}
-
-#foodInfo, #loseParagraph, #vegetableLoss, #fruitLoss, #cerealLoss, #meatLoss, #sweetsLoss {
+#gainParagraph, #vegetableGain, #fruitGain, #cerealGain, #meatGain, #sweetsGain, #foodInfo, #mealPlan, #loseParagraph, #suggestionParagraph, #vegetableLoss, #fruitLoss, #cerealLoss, #meatLoss, #sweetsLoss {
   display: none;
 }
 

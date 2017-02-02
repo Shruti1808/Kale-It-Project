@@ -245,6 +245,7 @@ $(document).ready(function(){
 				 dinnerMeal[i+6] + "</td>" +"</tr>";
       }
     }
+
 		//Output meal plan to page
     function outputResults() {
     tableExercise = "";
@@ -253,5 +254,8 @@ $(document).ready(function(){
     }
     outputResults();
 
+    $("#mealTable").append(tableExercise);
+
+    $("#mealPlan").show();
   });
 });
