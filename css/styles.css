@@ -1,3 +1,11 @@
+#gainParagraph, #vegetableGain, #fruitGain, #cerealGain, #meatGain, #sweetsGain {
+  display: none;
+}
+
+#foodInfo, #loseParagraph, #vegetableLoss, #fruitLoss, #cerealLoss, #meatLoss, #sweetsLoss {
+  display: none;
+}
+
 .intro-section {
     height: 100%;
     padding-top: 150px;
