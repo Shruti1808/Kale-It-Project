@@ -5,14 +5,11 @@
 #loseParagraph, #vegetableLoss, #fruitLoss, #cerealLoss, #meatLoss, #sweetsLoss {
   display: none;
 }
-body {
-  padding-top: 70px;
-  padding-bottom: 30px;
-}
+
 
 .navbar-inverse{
   background: rgba(0, 128, 43, 0.5);
-  min-width: 970px;
+  min-width: 900px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -29,7 +26,7 @@ body {
 
 .searchbar {
   font-size: 30px;
-  position: absolute;
+  position: fixed;
   right:12%;
   margin-right: 100px;
   margin-left: 0px;
@@ -40,7 +37,7 @@ body {
 }
 
 #navbar-logo {
-  height: 120px;
+  height: 100px;
   margin-left: 50px;
   margin-top: -30px;
 
@@ -57,7 +54,8 @@ body {
 body,
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-
+  /*padding-top: 70px;
+  padding-bottom: 30px;*/
 }
 
 /* Don't let the lead text change font-size. */
