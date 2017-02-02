@@ -185,7 +185,7 @@ $(document).ready(function(){
      var inputWeight = $(".weightQn option:selected").val();
      var inputNumber= parseInt($("input#weightQn").val());
 
-    $(".gainAndLose").text(inputNumber);
+    $(".gainAndLose").text(inputNumber); // Pounds the user wants to gain or lose
     if (inputWeight === "2") { // Gain Weight
       $("input:checkbox[name=eatMore]:checked").each(function() {
         $("#gainParagraph").show();
@@ -218,6 +218,7 @@ $(document).ready(function(){
       });
     }
     $("#foodInfo").show();
+    $("input#weightQn").val(""); // Clears number value for weight
 
     //Create new object using constructor
      var userChoice = new Choice([inputBreakfast,inputLunch,inputDinner,inputStatus,inputSavvy,inputFiber,inputCondition],inputGoals,[inputWeight,inputNumber])
