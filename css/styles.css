@@ -4,7 +4,7 @@
 
 #shutup {
   margin-left: 40px;
-  margin-top:-100px;
+  margin-top:20px;
   height: 600px;
   margin-bottom: -40px;
 }
@@ -25,27 +25,39 @@
   font-size: 25px;
 }
 .diet-section {
-    height: 100%;
-    padding-top: 150px;
-    padding-left: 25%;
-    text-align: center;
-    background: #eee;
+  height: 100%;
+  padding-top: 150px;
+  padding-bottom: 500px;
+  color:rgba(76, 61, 13,0.8);
+  background-image: url(../img/food7.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
 }
 
 .exercise-section {
-    height: 100%;
-    padding-top: 150px;
-    padding-left: 25%;
-    text-align: center;
-    background: #fff;
+  height: 100%;
+  padding-top: 150px;
+  padding-bottom: 500px;
+  color:rgb(242, 243, 244);
+  background-image: url(../img/exercise4.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
 }
 
 .result-section {
-    height: 100%;
-    padding-top: 150px;
-    padding-left: 25%;
-    text-align: center;
-    background: #eee;
+  height: 100%;
+  padding-top: 150px;
+  padding-bottom: 500px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  background-color: rgb(216, 214, 208);
 }
 
 .article-section {
@@ -58,6 +70,7 @@
 
 .btn-block {
   margin-top: 20px;
+  color: white;
 }
 /*Position for arrow*/
 .unslider-arrow {
