@@ -41,6 +41,12 @@
     background: #fff;
 }
 
+/*Position for arrow*/
+.unslider-arrow {
+  position: absolute;
+  bottom:50%;
+}
+
 /*Image Format for Article Section*/
 .card-img-top {
   width: 300px;
