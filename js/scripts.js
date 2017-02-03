@@ -222,10 +222,11 @@ $(document).ready(function(){
 		var inputNumber= parseInt($("input#weightQn").val());
 
 		$(".gainAndLose").text(inputNumber); // Pounds the user wants to gain or lose
+
 		if (inputWeight === "2") { // Gain Weight
+			$(".gainParagraph").show();
+			$("#gainText").show();
 			$("input:checkbox[name=eatMore]:checked").each(function() {
-				$(".gainParagraph").show();
-				$("#gainText").show();
 				if ($(this).val() === "1") {
 					$("#vegetableGain").show();
 				} else if ($(this).val() === "3") {
@@ -238,10 +239,10 @@ $(document).ready(function(){
 				$("#sweetsGain").show();
 			}
 		});
-	} else if (inputWeight === "1") { // Lose Weight
-		$("input:checkbox[name=eatLess]:checked").each(function() {
-			$(".loseParagraph").show();
-			$("#loseText").show();
+	} else { // Lose Weight
+		$(".loseParagraph").show();
+		$("#loseText").show();
+		$("input:checkbox[name=eatMore]:checked").each(function() {
 			if ($(this).val() === "9") {
 				$("#vegetableLoss").show();
 			} else if ($(this).val() === "7") {

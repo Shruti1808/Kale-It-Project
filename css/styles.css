@@ -47,7 +47,6 @@ h1, h2, h3 {
 #dietButton {
   margin-top: 10px;
 }
-
 .exercise-section {
   height: 100%;
   padding-top: 150px;
@@ -86,10 +85,18 @@ th {
 text-align: center;
 }
 
-.eatMoreGain, .loseWeight, #foodInfo {
+.gainParagraph, .loseParagraph, #foodInfo {
 text-align: left;
 }
-
+.gainParagraph > ul >li , .loseParagraph > ul >li {
+  color: rgb(122, 89, 55);
+}
+#logoResult {
+  padding-top: -20px;
+  height: 200px;
+  position: relative;
+  left:-10%;
+}
 .article-section {
     height: 130%;
     padding-top: 50px;
