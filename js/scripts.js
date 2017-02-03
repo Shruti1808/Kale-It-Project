@@ -3,7 +3,7 @@ var score = 0;
 
 //Business logic
 //For Breakfast
-var breakfastMenu = ["Whole-wheat bread with ", "quinoa with ", " oatmeals with ", "broccoli ", "berries ", "eggs ", "and greek yogurt", "and smoothie ", "and roasted nuts"];
+var breakfastMenu = ["Whole-wheat bread with ", "Quinoa with ", " Oatmeals with ", "broccoli ", "berries ", "eggs ", "and greek yogurt", "and smoothie ", "and roasted nuts"];
 
 var breakfastMeal = [];
 
@@ -38,8 +38,7 @@ function shuffle(breakfastMeal) {
 shuffle(breakfastMeal);
 
 //For lunch
-var lunchMenu = ["wheat sandwich with ","organic wraps with ", "brown rice with ", "chicken breasts ", "kale " , "organic avocado dressing ","and fruit salad" , "and greek yoghurt",
-"and lentil soups"]
+var lunchMenu = ["Wheat sandwich with ","Organic wraps with ","Brown rice with ","chicken breasts ","kale ","organic avocado dressing ","and fruit salad","and greek yoghurt","and lentil soups"]
 
 var lunchMeal = [];
 
@@ -74,7 +73,7 @@ function shuffle(lunchMeal) {
 shuffle(lunchMeal);
 
 //For dinner
-var dinnerMenu = ["seasoned chicken with ","veggie burger with ", "gluten-free spaghetti with ", "mashed potato ", "brussels sprouts " , "pesto sauce ","and fruit salad" , "and veggie salad", "and corn salad"];
+var dinnerMenu = ["Seasoned chicken with ","Veggie burger with ", "Gluten-free spaghetti with ", "mashed potato ", "brussels sprouts " , "pesto sauce ","and fruit salad" , "and veggie salad", "and corn salad"];
 
 var dinnerMeal = [];
 
@@ -198,9 +197,10 @@ Choice.prototype.scoreNumber= function () {
 // user logic goes here
 $(document).ready(function(){
 	$(".diet, .exercise").unslider();
+	$(document).tooltip();
 	$("form").submit(function(event){
 		event.preventDefault();
-
+		$(".result-section").show();
 		//Make radio input into variable
 		var inputBreakfast = $("input:radio[name=breakfast]:checked").val();
 		var inputLunch = $("input:radio[name=lunch]:checked").val();
@@ -224,7 +224,8 @@ $(document).ready(function(){
 		$(".gainAndLose").text(inputNumber); // Pounds the user wants to gain or lose
 		if (inputWeight === "2") { // Gain Weight
 			$("input:checkbox[name=eatMore]:checked").each(function() {
-				$("#gainParagraph").show();
+				$(".gainParagraph").show();
+				$("#gainText").show();
 				if ($(this).val() === "1") {
 					$("#vegetableGain").show();
 				} else if ($(this).val() === "3") {
@@ -239,7 +240,8 @@ $(document).ready(function(){
 		});
 	} else if (inputWeight === "1") { // Lose Weight
 		$("input:checkbox[name=eatLess]:checked").each(function() {
-			$("#loseParagraph").show();
+			$(".loseParagraph").show();
+			$("#loseText").show();
 			if ($(this).val() === "9") {
 				$("#vegetableLoss").show();
 			} else if ($(this).val() === "7") {
@@ -285,11 +287,11 @@ function makeWeekMeal() {
 //Output meal plan to page
 function outputResults() {
 	tableMeal = "";
-	makeWeekMeal(breakfastMeal);
-	$("#mealResults").append("<table>" + "<tr>" + "<th>Day One</th>" + "<th>Day Two</th>" + "<th>Day Three</th>" + "<th>Day Four</th>" + "<th>Day Five</th>" + "<th>Day Six</th>" + "<th>Day Seven</th>" + "</tr>" + tableMeal + "</table>");
+	$("#mealTable").text("");
+	makeWeekMeal();
+	$("#mealTable").append("<table class='table table-bordered table-hover'>" + "<tr>" + "<th>Day One</th>" + "<th>Day Two</th>" + "<th>Day Three</th>" + "<th>Day Four</th>" + "<th>Day Five</th>" + "<th>Day Six</th>" + "<th>Day Seven</th>" + "</tr>" + tableMeal + "</table>");
 }
 outputResults();
-$("#mealTable").append(tableMeal);
 $("#mealPlan").show();
 
 var limit = 0;
@@ -364,18 +366,16 @@ function makeTable2() {
 				$("#weeklyRoutine").text("")
 				if (inputWeeklyExercise === 1) {
 					makeTable2(newExercise);
-					console.log(tableExercise);
-					$("#weeklyRoutine").append("<table>"+"<tr>"+"<th>Day One</th>"+"<th>Day Two</th>"+"</tr>"+tableExercise+"</table>")
+					$("#weeklyRoutine").append("<table class='table table-bordered table-hover'>"+"<tr>"+"<th>Day One</th>"+"<th>Day Two</th>"+"</tr>"+tableExercise+"</table>")
 				} else if (inputWeeklyExercise === 2) {
 					makeTable4(newExercise);
-					$("#weeklyRoutine").append("<table>"+"<tr>"+"<th>Day One</th>"+"<th>Day Two</th>"+"<th>Day Three</th>"+"<th>Day Four</th>"+"</tr>"+tableExercise+"</table>")
+					$("#weeklyRoutine").append("<table class='table table-bordered table-hover'>"+"<tr>"+"<th>Day One</th>"+"<th>Day Two</th>"+"<th>Day Three</th>"+"<th>Day Four</th>"+"</tr>"+tableExercise+"</table>")
 				} else {
 					makeTable6(newExercise);
-					$("#weeklyRoutine").append("<table>"+"<tr>"+"<th>Day One</th>"+"<th>Day Two</th>"+"<th>Day Three</th>"+"<th>Day Four</th>"+"<th>Day Five</th>"+"<th>Day Six</th>"+"</tr>"+tableExercise+"</table>")
+					$("#weeklyRoutine").append("<table class='table table-bordered table-hover'>"+"<tr>"+"<th>Day One</th>"+"<th>Day Two</th>"+"<th>Day Three</th>"+"<th>Day Four</th>"+"<th>Day Five</th>"+"<th>Day Six</th>"+"</tr>"+tableExercise+"</table>")
 				}
 			}
 			outputResults2();
-			$("#weeklyRoutine").append(tableExercise);
 			$("#suggestionParagraph").show();
 		});
 	});
